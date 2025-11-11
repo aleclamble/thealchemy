@@ -63,23 +63,47 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right Column - Stripe Buy Buttons */}
-        <div>
-          <div className="payment-section">
-            <stripe-buy-button
-              buy-button-id="buy_btn_1SSOX2GJyA264RLzxQ8LPbRx"
-              publishable-key="pk_live_51Nz2c5GJyA264RLzs4wMnYgqr0Dey1zRJeBQr7ZdbdB2KuyJmLbgfHGD5Yjx7RBVrt4zkqHAR4s7QGkWzI5eAwRT00md2ZuRH1"
-            >
-            </stripe-buy-button>
+        {/* Right Column - Custom Pricing Cards with Stripe Checkout */}
+        <div className="pricing-stack">
+          <div className="pricing-card">
+            <div className="pricing-card-header">
+              <h3 className="pricing-title">Full Lifetime Access</h3>
+            </div>
+            <div className="pricing-price">
+              <span className="pricing-amount">€1,599</span>
+              <span className="pricing-subtitle">One-time payment</span>
+            </div>
+
+            <div className="payment-options">
+              <p className="payment-options-title">PREFER <span className="klarna-text">KLARNA</span>?</p>
+              <p className="payment-options-subtitle">Split into interest-free payments with Klarna</p>
+              
+              <div className="klarna-option">
+                <div className="klarna-icon">✓</div>
+                <div className="klarna-text">
+                  <div className="klarna-main">Pay in 30 days</div>
+                  <div className="klarna-sub">Interest free</div>
+                </div>
+              </div>
+
+              <div className="klarna-option">
+                <div className="klarna-icon">✓</div>
+                <div className="klarna-text">
+                  <div className="klarna-main">Pay in 3 installments</div>
+                  <div className="klarna-sub">€533/month, interest free</div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="pricing-cta">
+              <stripe-buy-button
+                buy-button-id="buy_btn_1SSOX2GJyA264RLzxQ8LPbRx"
+                publishable-key="pk_live_51Nz2c5GJyA264RLzs4wMnYgqr0Dey1zRJeBQr7ZdbdB2KuyJmLbgfHGD5Yjx7RBVrt4zkqHAR4s7QGkWzI5eAwRT00md2ZuRH1"
+              >
+              </stripe-buy-button>
+            </div>
           </div>
 
-          <div className="payment-section" style={{ marginTop: 16 }}>
-            <stripe-buy-button
-              buy-button-id="buy_btn_1SSPSyGJyA264RLzwrwfwNz3"
-              publishable-key="pk_live_51Nz2c5GJyA264RLzs4wMnYgqr0Dey1zRJeBQr7ZdbdB2KuyJmLbgfHGD5Yjx7RBVrt4zkqHAR4s7QGkWzI5eAwRT00md2ZuRH1"
-            >
-            </stripe-buy-button>
-          </div>
         </div>
       </div>
     </div>

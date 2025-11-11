@@ -429,6 +429,149 @@ body {
   color: #9a9a9a;
 }
 
+/* Pricing stack and card styles (dark theme) */
+.pricing-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pricing-card {
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  padding: 24px;
+  width: fit-content;
+  max-width: 350px;
+}
+
+.pricing-card-header {
+  margin-bottom: 4px;
+}
+
+.pricing-title {
+  margin: 0;
+  font-size: 18px;
+  color: #f0f0f0;
+  font-weight: normal;
+}
+
+.pricing-price {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.pricing-amount {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.pricing-period {
+  font-size: 14px;
+  color: #bdbdbd;
+}
+
+.pricing-subtitle {
+  margin: 0;
+  font-size: 11px;
+  color: #a9a9a9;
+}
+
+.pricing-features {
+  margin: 14px 0 0 0;
+  padding: 0 0 0 18px;
+  color: #d2d2d2;
+}
+
+.pricing-features li {
+  margin: 6px 0;
+}
+
+.pricing-cta {
+  margin-top: 16px;
+}
+
+.pricing-cta stripe-buy-button {
+  width: 100%;
+  display: block;
+}
+
+.get-access-button {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.get-access-button:hover {
+  background-color: #1a1a1a;
+}
+
+.payment-options {
+  margin-top: 20px;
+}
+
+.payment-options-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9a9a9a;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.klarna-text {
+  font-weight: 900;
+  color: #ff6b9d;
+}
+
+.payment-options-subtitle {
+  font-size: 14px;
+  color: #bdbdbd;
+  margin-bottom: 10px;
+}
+
+.klarna-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 4px 0;
+}
+
+.klarna-icon {
+  font-size: 16px;
+  color: #22c55e;
+  margin-top: 1px;
+  font-weight: bold;
+}
+
+.klarna-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.klarna-main {
+  font-size: 14px;
+  color: #eaeaea;
+  font-weight: 500;
+}
+
+.klarna-sub {
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
 @media (max-width: 768px) {
   .main-content {
     grid-template-columns: 1fr;
