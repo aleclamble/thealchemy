@@ -63,13 +63,23 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right Column - Stripe Buy Button */}
-        <div className="payment-section">
-          <stripe-buy-button
-            buy-button-id="buy_btn_1SSOX2GJyA264RLzxQ8LPbRx"
-            publishable-key="pk_live_51Nz2c5GJyA264RLzs4wMnYgqr0Dey1zRJeBQr7ZdbdB2KuyJmLbgfHGD5Yjx7RBVrt4zkqHAR4s7QGkWzI5eAwRT00md2ZuRH1"
-          >
-          </stripe-buy-button>
+        {/* Right Column - Stripe Buy Buttons */}
+        <div>
+          <div className="payment-section">
+            <stripe-buy-button
+              buy-button-id="buy_btn_1SSOX2GJyA264RLzxQ8LPbRx"
+              publishable-key="pk_live_51Nz2c5GJyA264RLzs4wMnYgqr0Dey1zRJeBQr7ZdbdB2KuyJmLbgfHGD5Yjx7RBVrt4zkqHAR4s7QGkWzI5eAwRT00md2ZuRH1"
+            >
+            </stripe-buy-button>
+          </div>
+
+          <div className="payment-section" style={{ marginTop: 16 }}>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1SSPSyGJyA264RLzwrwfwNz3"
+              publishable-key="pk_live_51Nz2c5GJyA264RLzs4wMnYgqr0Dey1zRJeBQr7ZdbdB2KuyJmLbgfHGD5Yjx7RBVrt4zkqHAR4s7QGkWzI5eAwRT00md2ZuRH1"
+            >
+            </stripe-buy-button>
+          </div>
         </div>
       </div>
     </div>
