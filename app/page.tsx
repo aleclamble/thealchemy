@@ -19,9 +19,6 @@ export default function Home() {
             />
           </div>
           
-          <p className="description">
-            Learn a Mechanical strategy for market success with daily insights by The Architect & AC.
-          </p>
 
           {/* Benefits Section */}
           <div className="benefits-section">
