@@ -52,7 +52,7 @@ export default function Home() {
             <div className="benefit-item">
               <div className="benefit-icon automation">⚙️</div>
               <div className="benefit-content">
-                <h3>Automated System -> Proof of Concept</h3>
+                <h3>Automated System → Proof of Concept</h3>
                 <p>
                   Explore our mechanical trading strategy brought to life through automation, 
                   backed by data-driven results and built as a proof of concept for a consistent 
