@@ -588,4 +588,12 @@ body {
     width: 100%;
     max-width: none;
   }
+  
+  .main-title {
+    text-align: center;
+  }
+  
+  .pricing-cta {
+    text-align: center;
+  }
 }
